@@ -1,24 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap");
-.first {
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@600&family=Fredoka:wght@300;500&display=swap");
+.first .first-square-container {
   height: 1080px;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
-.first .first-left-rect {
-  width: 70%;
+.first .first-square-container .first-content-container {
+  padding-left: 69px;
+  padding-right: 69px;
+  position: absolute;
   height: 100%;
-  background: #FEEBD6;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
-.first .first-left-rect .first-frame {
+.first .first-square-container .first-content-container .first-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.first .first-square-container .first-content-container .first-header .first-frame {
   display: flex;
   flex-direction: row;
   gap: 160px;
   width: 624px;
   height: 28px;
-  padding: 46px 917px 1006px 379px;
+  margin-top: 46px;
+  margin-left: 310px;
 }
-.first .first-left-rect .first-frame .first-frame-text {
+.first .first-square-container .first-content-container .first-header .first-frame .first-frame-text {
   color: #222;
   font-family: Akshar;
   font-size: 25px;
@@ -27,12 +38,114 @@
   line-height: normal;
   text-transform: uppercase;
 }
+.first .first-square-container .first-content-container .first-header .log-out {
+  margin-top: 35px;
+  margin-left: 804px;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container {
+  margin: 117px 231px 190px 65px;
+  display: flex;
+  flex-direction: row;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-image {
+  display: block;
+  width: 689px;
+  height: 699px;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container {
+  margin-right: 60px;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-text-frame {
+  margin-top: 151px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-text-frame .first-text1 {
+  color: #1b1b1b;
+  font-family: Fredoka;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-text-frame .first-text-frame2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-s tart;
+  gap: 58px;
+  width: 734px;
+  height: 248px;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-text-frame .first-text-frame2 .first-text2 {
+  color: #222;
+  font-family: Akshar;
+  font-size: 45px;
+  width: 737px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-text-frame .first-text-frame2 .first-text3 {
+  color: #1b1b1b;
+  font-family: Fredoka;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 669px;
+  height: auto;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-frame-filter {
+  border: 2px solid #000;
+  padding: 14px 99px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: flex-start;
+  height: 32px;
+  flex-shrink: 0;
+  margin-top: 84px;
+  margin-left: 13px;
+}
+.first .first-square-container .first-content-container .first-image-and-text-container .first-text-container .first-frame-filter .first-text4 {
+  color: #222;
+  font-family: Akshar;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.first .first-left-rect {
+  width: 70%;
+  height: 100%;
+  background: #feebd6;
+}
 .first .first-right-rect {
   width: 30%;
   height: 100%;
-  background-color: #FFB6B6;
+  background-color: #ffb6b6;
+}
+
+.second {
+  height: 1080px;
+  background-color: wheat;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
-  width: 1920px;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
