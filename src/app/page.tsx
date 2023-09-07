@@ -472,7 +472,7 @@ export default function Home() {
               <div className={style.dayName}>{dayName}</div>
               <div className={style.row_time_container}>
                 {schedule[dayName].map((time: string) => (
-                  <div className={style.time}>{time}</div>
+                  <div className={style.time} key={time}>{time}</div>
                 ))}
               </div>
               <div className={style.order}>ORDER</div>
