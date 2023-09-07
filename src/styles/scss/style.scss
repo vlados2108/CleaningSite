@@ -1,5 +1,11 @@
 @import "./_first";
 @import "./second";
+@import "./third"; 
+@import "./filter";
+@import "./faq";
+@import "./reviews";
+@import "./nav";
+@import "./modal";
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -7,12 +13,14 @@ body {
     color: #333;
     
     margin: 0;
-    padding: 0;
+    padding: 0;  
     
 }
 
 .main-container{
     min-height: 100vh;  
+    max-width: 1920px;
+    min-width: 390px;
     overflow: hidden;
     display: flex;
     flex-direction: column;

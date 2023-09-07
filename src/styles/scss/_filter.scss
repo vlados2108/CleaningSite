@@ -1,0 +1,255 @@
+.filter {
+  height: 1402px;
+  align-items: center;
+  .filter-header {
+    margin-top: 82px;
+    margin-bottom: 86px;
+    line-height: 49.5px;
+    color: #222;
+    font-family: Akshar;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .filter-container {
+    margin-top: 33px;
+    .filter-name {
+      color: #222;
+      font-family: Akshar;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 33px;
+      text-transform: uppercase;
+      margin-left: 503px;
+      margin-bottom: 12px;
+
+      &.type {
+        margin-left: 350px;
+      }
+    }
+    .filter-back {
+      background: #feebd6;
+      display: flex;
+      height: 180px;
+      .filter-values {
+        margin: 54px auto 67px auto;
+        display: flex;
+        gap: 51px;
+        &.type {
+          gap: 30px;
+        }
+
+        .filter-value {
+          display: inline-block;
+          border: 2px solid #000;
+          display: flex;
+          align-items: flex-start;
+          color: #222;
+          font-family: Akshar;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30.8px;
+          text-transform: uppercase;
+          background: none;
+          justify-content: center;
+
+          transition: all 500ms ease;
+          &:hover {
+            background: #ffb6b6;
+          }
+
+          &.btn1 {
+            padding: 14px 94px;
+          }
+          &.btn2 {
+            padding: 14px 103px;
+          }
+          &.btn3 {
+            padding: 14px 80px;
+          }
+          &.btn4 {
+            padding: 14px 60px;
+          }
+          &.btn5 {
+            padding: 14px 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .address-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 93px;
+    .filter-address {
+      display: flex;
+      width: 790px;
+      padding: 14px 27px;
+      align-items: flex-start;
+      gap: 10px;
+
+      color: #000;
+      font-family: Akshar;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27.5px;
+      text-transform: uppercase;
+
+      ::placeholder {
+        color: rgba(34, 34, 34, 0.4);
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 28.6px;
+      }
+    }
+
+    .filter-search {
+      margin-top: 83px;
+      display: inline-flex;
+      height: 60px;
+      padding: 14px 99px;
+      align-items: flex-start;
+      gap: 10px;
+      flex-shrink: 0;
+      border: 2px solid #000;
+      background: none;
+      color: #222;
+      font-weight: 600;
+      line-height: 30.8px;
+      font-family: Akshar;
+      font-size: 28px;
+      font-style: normal;
+      text-transform: uppercase;
+      transition: all 500ms ease;
+      &:hover {
+        background: #ffb6b6;
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .filter {
+    height: calc(476px + (1402 - 476) * ((100vw - 390px) / (1920 - 390)));
+    .filter-header {
+      margin-top: calc(
+        12.75px + (82 - 12.75) * ((100vw - 390px) / (1920 - 390))
+      );
+      margin-bottom: calc(
+        10.25px + (86 - 10.25) * ((100vw - 390px) / (1920 - 390))
+      );
+      line-height: calc(
+        16.5px + (49.5 - 16.5) * ((100vw - 390px) / (1920 - 390))
+      );
+      font-size: calc(15px + (45 - 15) * ((100vw - 390px) / (1920 - 390)));
+    }
+    .filter-container {
+      margin-top: calc(20px + (33 - 20) * ((100vw - 390px) / (1920 - 390)));
+      .filter-name {
+        font-size: calc(12px + (30 - 12) * ((100vw - 390px) / (1920 - 390)));
+        line-height: calc(
+          13.2px + (33 - 13.2) * ((100vw - 390px) / (1920 - 390))
+        );
+        margin-left: calc(95px + (503 - 95) * ((100vw - 390px) / (1920 - 390)));
+        margin-bottom: calc(3px + (12 - 3) * ((100vw - 390px) / (1920 - 390)));
+
+        &.type {
+          margin-left: calc(
+            95px + (350 - 95) * ((100vw - 390px) / (1920 - 390))
+          );
+        }
+      }
+      .filter-back {
+        height: calc(65px + (180 - 65) * ((100vw - 390px) / (1920 - 390)));
+
+        &.back2 {
+          height: calc(67px + (180 - 67) * ((100vw - 390px) / (1920 - 390)));
+        }
+        &.back3 {
+          height:calc(76px + (240 - 76) * ((100vw - 390px) / (1920 - 390)));
+        }
+        .filter-values {
+          margin: calc(23px + (54 - 23) * ((100vw - 390px) / (1920 - 390))) auto
+            calc(25px + (67 - 25) * ((100vw - 390px) / (1920 - 390))) auto;
+          gap: calc(12px + (51 - 12) * ((100vw - 390px) / (1920 - 390)));
+          &.type {
+            display: grid;
+            gap: 10px;
+            margin: calc(15px + (54 - 15) * ((100vw - 390px) / (1920 - 390)))
+              auto calc(15px + (67 - 15) * ((100vw - 390px) / (1920 - 390)))
+              auto;
+            grid-template-columns: calc(
+                95px + (330 - 95) * ((100vw - 390px) / (1920 - 390))
+              ) calc(96px + (330 - 96) * ((100vw - 390px) / (1920 - 390)));
+            grid-auto-rows: calc(
+              18px + (59 - 18) * ((100vw - 390px) / (1920 - 390))
+            );
+          }
+
+          .filter-value {
+            font-size: calc(9px + (28 - 9) * ((100vw - 390px) / (1920 - 390)));
+            border: 1px solid #000;
+            line-height: calc(
+              9.9px + (30.8 - 9.9) * ((100vw - 390px) / (1920 - 390))
+            );
+
+            &.btn1 {
+              padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390)))
+                calc(27.22px + (94 - 27.22) * ((100vw - 390px) / (1920 - 390)));
+            }
+            &.btn2 {
+              padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390)))
+                calc(30px + (103 - 30) * ((100vw - 390px) / (1920 - 390)));
+            }
+            &.btn3 {
+              padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390)))
+                calc(23px + (80 - 23) * ((100vw - 390px) / (1920 - 390)));
+            }
+            &.btn4 {
+              padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390)))
+                calc(17.38px + (60 - 17.38) * ((100vw - 390px) / (1920 - 390)));
+            }
+            &.btn5 {
+              padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390)))
+                calc(5.78px + (40 - 5.78) * ((100vw - 390px) / (1920 - 390)));
+            }
+          }
+        }
+      }
+    }
+
+    .address-search-container {
+      margin-top: calc(30px + (93 - 30) * ((100vw - 390px) / (1920 - 390)));
+      .filter-address {
+        width: calc(229px + (790 - 229) * ((100vw - 390px) / (1920 - 390)));
+        padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390))) calc(8px + (27 - 8) * ((100vw - 390px) / (1920 - 390)));
+        gap: calc(2.9px + (10 - 2.9) * ((100vw - 390px) / (1920 - 390)));
+
+        font-size: calc(9px + (25 - 9) * ((100vw - 390px) / (1920 - 390)));
+        line-height: calc(9.9px + (27.5 - 9.9) * ((100vw - 390px) / (1920 - 390)));
+
+        ::placeholder {
+          font-size: calc(9px + (26 - 9) * ((100vw - 390px) / (1920 - 390)));
+          line-height: calc(9.9px + (28.6 - 9.9) * ((100vw - 390px) / (1920 - 390)));
+        }
+      }
+
+      .filter-search {
+        margin-top: calc(30px + (83 - 30) * ((100vw - 390px) / (1920 - 390)));
+        height: calc(17.3px + (60 - 17.3) * ((100vw - 390px) / (1920 - 390)));
+        padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390))) calc(29px + (99 - 29) * ((100vw - 390px) / (1920 - 390)));
+        gap: calc(2.9px + (10 - 2.9) * ((100vw - 390px) / (1920 - 390)));
+        line-height: calc(9.9px + (30.8 - 9.9) * ((100vw - 390px) / (1920 - 390)));
+        font-size: calc(9px + (28 - 9) * ((100vw - 390px) / (1920 - 390))); 
+        border: 1px solid #000;
+      }
+    }
+  }
+}

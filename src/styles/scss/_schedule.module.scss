@@ -1,0 +1,127 @@
+.schedule {
+  padding: 0 93px 0 203px;
+  //width: 100vw;
+  max-width: 1920px;
+  height: 1194px;
+  font-family: Akshar;
+  .schedule_title {
+    
+    margin-top: 198px;
+    margin-left: 662px;
+    color: #222;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49.5px;
+    text-transform: uppercase;
+  }
+
+  .schedule_container {
+    //width: 100%;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    margin-top: 106px;
+    margin-bottom: 162px;
+    gap: 75px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  line-height: 60px;
+  font-style: normal;
+  height: 47px;
+}
+
+.dayName {
+  flex: 1;
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 180px;
+}
+
+.row_time_container {
+  margin-left: 150px;
+  flex: 1;
+  //flex-grow: 1;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  opacity: 30%;
+  align-items: center;
+  .time {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.order {
+  opacity: 30%;
+  display: flex;
+  align-items: flex-start;
+  //flex: content;
+  max-width: 73px;
+  height: 32px;
+  padding: 14px 99px;
+  text-align: center;
+  border: 2px solid #000;
+  background: #fff;
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30.8px;
+  text-transform: uppercase;
+}
+
+@media (max-width:1800px){
+  .schedule {
+    padding: 0 calc(31.16px + (93 - 31.16) * ((100vw - 390px) / (1920 - 390))) 0 calc(30px + (203 - 30) * ((100vw - 390px) / (1920 - 390)));
+    height: calc(441px + (1194 - 441) * ((100vw - 390px) / (1920 - 390)));
+    .schedule_title {
+      margin-top: calc(37.22px + (198 - 37.22) * ((100vw - 390px) / (1920 - 390)));
+      margin-left: calc(134px + (662 - 134) * ((100vw - 390px) / (1920 - 390)));
+      font-size: calc(15px + (45 - 15) * ((100vw - 390px) / (1920 - 390)));
+      line-height: calc(16.5px + (49.5 - 16.5) * ((100vw - 390px) / (1920 - 390)));
+    }
+  
+    .schedule_container {
+      margin-top: calc(41px + (106 - 41) * ((100vw - 390px) / (1920 - 390)));
+      margin-bottom: calc(41px + (162 - 41) * ((100vw - 390px) / (1920 - 390)));
+      gap: calc(19px + (75 - 19) * ((100vw - 390px) / (1920 - 390)));
+    }
+  }
+  
+  .row {
+    line-height: calc(20px + (60 - 20) * ((100vw - 390px) / (1920 - 390)));
+    height: calc(17px + (60 - 17) * ((100vw - 390px) / (1920 - 390)));;
+  }
+  
+  .dayName {
+    font-size: calc(8px + (28 - 8) * ((100vw - 390px) / (1920 - 390)));
+    max-width: calc(40px + (180 - 40) * ((100vw - 390px) / (1920 - 390)));
+  }
+  
+  .row_time_container {
+    flex: 3;
+    margin-left: calc(30px + (150 - 30) * ((100vw - 390px) / (1920 - 390)));
+    gap: calc(8px + (40 - 8) * ((100vw - 390px) / (1920 - 390)));
+    .time {
+      font-size: calc(8px + (25 - 8) * ((100vw - 390px) / (1920 - 390)));
+    }
+  }
+  
+  .order {
+    max-width: calc(24px + (73 - 24) * ((100vw - 390px) / (1920 - 390)));
+    height: calc(10px + (32 - 10) * ((100vw - 390px) / (1920 - 390)));
+    padding: calc(4px + (14 - 4) * ((100vw - 390px) / (1920 - 390))) calc(28px + (99 - 28) * ((100vw - 390px) / (1920 - 390)));;
+    font-size: calc(9px + (28 - 9) * ((100vw - 390px) / (1920 - 390)));
+    line-height: calc(9.9px + (30.8 - 9.9) * ((100vw - 390px) / (1920 - 390)));
+  }
+}
