@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "../../styles/css/style.css";
 import Calendar from "../Calendar/calendar";
-export default function page() {
+export default function Page() {
   const [isCalendarActive, setCalendarActive] = useState(false);
   const [year,setYear] = useState(2000)
   const [month,setMonth] = useState('August')
