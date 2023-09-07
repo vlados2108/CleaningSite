@@ -489,10 +489,10 @@ export default function Home() {
             <div className="faq-column">
               <div className="faq-box box1">
                 <div className="faq-question">
-                  What services are included in the "weekly cleaning" package?
+                  What services are included in the weekly cleaning package?
                 </div>
                 <div className="faq-answer">
-                  The "weekly cleaning" package includes a complete cleaning of
+                  The weekly cleaning package includes a complete cleaning of
                   all areas, including vacuuming, dusting, mopping, cleaning the
                   bathroom, kitchen and other common areas.
                 </div>
