@@ -468,7 +468,7 @@ export default function Home() {
         <div className={style.schedule_title}>SCHEDULE</div>
         <div className={style.schedule_container}>
           {Object.keys(schedule).map((dayName) => (
-            <div className={style.row}>
+            <div className={style.row} key={dayName}>
               <div className={style.dayName}>{dayName}</div>
               <div className={style.row_time_container}>
                 {schedule[dayName].map((time: string) => (
