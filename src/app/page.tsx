@@ -6,18 +6,6 @@ import { useState } from "react";
 import BtnSlider from "./btnSlider";
 import dataSlider from "./dataSlider";
 
-export enum ApproverType {
-  MONDAY = "MONDAY",
-  TUESDAY = "TUESDAY",
-  WEDNESDAY = "WEDNESDAY",
-  THURSDAY = "THURSDAY",
-  FRIDAY = "FRIDAY",
-  SATURDAY = "SATURDAY",
-  SUNDAY = "SUNDAY",
-}
-
-type t = Record<ApproverType, string[]>;
-
 export default function Home() {
   const schedule: any = {
     MONDAY: [
